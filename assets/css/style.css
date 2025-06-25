@@ -87,10 +87,18 @@ nav {
 
 /* Main content */
 main {
-  background-color: lightblue;
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
   margin-top: 47px; /*because headers position has been set to fixed it's hiding a part of the main, so it has to be pushed down*/
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    /* image does not repeat, horizontally and vertically centred, automatically size itself so it covers the entire
+hero section without distorting.*/
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /* Footer */
