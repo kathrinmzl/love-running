@@ -97,12 +97,23 @@ main {
     /* image does not repeat, horizontally and vertically centred, automatically size itself so it covers the entire
 hero section without distorting.*/
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
 }
 
 #cover-text {
     /* Last rgbs value sets the opacity so it is semi transparent*/
     background-color: rgba(241, 109, 107, 0.7);
     font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%; 
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -155,6 +166,12 @@ hero section without distorting.*/
     main {
         /*Push main content down to accomodate larger header */
         margin-top: 79px;
+    }
+
+    /* Hero image */
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
