@@ -121,4 +121,16 @@ footer {
         display: none; /* dont show the label anymore*/
     }
 
+    /* Take up more space with the logo */
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /*Push main content down to accomodate larger header */
+        margin-top: 79px;
+    }
 }
