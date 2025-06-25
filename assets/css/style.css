@@ -22,7 +22,12 @@ body {
 
 /* Header */
 header {
-  background-color: lightcoral;
+  background-color: #ffffff;
+  padding: 0 1rem; /*to prevent text from sticking to the side of the screen */
+  position: fixed; /*should stay at the top when scrolling*/
+  z-index: 99; /* making sure its layered on top of all other elements*/
+  width: 100%; /* make sure it fills the width of the screen*/
+  box-shadow: 0 2px 2px #3a3a3a ; /*horizontal offset, vertical offset, blur, color -> shadow makes the box appear slightly elevated*/
 }
 
 h1 {
