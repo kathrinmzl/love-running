@@ -57,6 +57,17 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute; /*"absolute" takes the element out of the normal flow of the page*/
+    background-color: #ffffff; /* reset background color to the header backgrond color, because of the absolute position, the navbar isn't shown in the header element anymore*/
+    padding: 0 1rem;
+    width: 100%;
+    left: 0; /*align directly to the left of the screen*/
+    box-shadow: 0 2px 2px #3a3a3a ;
+    display: none; /* navbar items are hidden until user clicks to open them*/
+}
+
 /* Main content */
 main {
   background-color: lightblue;
