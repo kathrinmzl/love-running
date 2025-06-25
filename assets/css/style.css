@@ -15,6 +15,9 @@ body {
   flex-direction: column; /* Make sure our elements will still show underneath each other */
   /* Generic project styles */
   color: #3a3a3a;
+  font-family: "Lato", sans-serif; /*sans-serif is fallback font*/
+
+
 }
 
 /* Header */
