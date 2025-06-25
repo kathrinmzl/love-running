@@ -1,32 +1,35 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200..700&display=swap');
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; /*When setting height/width to an element, it will be applied to the entire element including the border*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*When setting height/width to an element, it will be applied to the entire element including the border*/
 }
 
 /* General styles */
 body {
-    min-height: 100vh; /* Using min-height will allow the body to stretch larger than the height of the screen when there is enough content on the page that the user needs to scroll.*/
-    display: flex;
-    flex-direction: column; /* Make sure our elements will still show underneath each other */
-    /* Generic project styles */
-    color: #3a3a3a
+  min-height: 100vh; /* Using min-height will allow the body to stretch larger than the height of the screen when there is enough content on the page that the user needs to scroll.*/
+  display: flex;
+  flex-direction: column; /* Make sure our elements will still show underneath each other */
+  /* Generic project styles */
+  color: #3a3a3a;
 }
 
 /* Header */
 header {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 /* Main content */
 main {
-    background-color: lightblue;
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
+  background-color: lightblue;
+  /* Make main element take up any surplus space to push footer down */
+  flex: 1 0 auto;
 }
 
 /* Footer */
 footer {
-    background-color: orange;
+  background-color: orange;
 }
