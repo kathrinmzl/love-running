@@ -28,6 +28,9 @@ header {
   z-index: 99; /* making sure its layered on top of all other elements*/
   width: 100%; /* make sure it fills the width of the screen*/
   box-shadow: 0 2px 2px #3a3a3a ; /*horizontal offset, vertical offset, blur, color -> shadow makes the box appear slightly elevated*/
+  display: flex; /*make sure Logo and checkbox are in a row instead of underneath each other*/
+  justify-content: space-between;
+  align-items: baseline; /* vertical alignment*/
 }
 
 header a {
@@ -66,6 +69,20 @@ nav {
     left: 0; /*align directly to the left of the screen*/
     box-shadow: 0 2px 2px #3a3a3a ;
     display: none; /* navbar items are hidden until user clicks to open them*/
+    top: 100%; /* top of the element should start at the bottom of its parent (0% represents the top of the parent)*/
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav { /* When the checkbox is checked we want the sibling nav element to display*/
+    display: block;
+}
+
+#nav-toggle {
+    display: none; /*hide checkbox*/
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main content */
