@@ -97,3 +97,28 @@ main {
 footer {
   background-color: orange;
 }
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px){
+    /* Header */
+    nav {
+        display: block; /* navbar should always be displayed */
+        position: relative; /* position inside the header */
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex; /* show list items next to each other*/
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none; /* dont show the label anymore*/
+    }
+
+}
