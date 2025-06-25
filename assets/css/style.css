@@ -188,6 +188,18 @@ hero section without distorting.*/
     color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    /* Makes sure the alt text stays readable */
+    line-height: 1em;
+}
+
+/* get rid of white space between photos */
+#photos {
+    line-height: 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
