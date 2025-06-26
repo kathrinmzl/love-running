@@ -38,7 +38,36 @@
 
     <!-- Main content element -->
     <main>
-        <p>Main Content</p>
+        <section id="signup">
+            <form action="https://formdump.codeinstitute.net" method="post" id="signup-form">
+                <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" class="text-input" required>
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email-address" id="email-address" class="text-input" required>
+                <br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" value="road" id="road" name="running_preference" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" value="trail" id="trail" name="running_preference" required>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" value="both" id="both" name="running_preference" required>
+                    </div>
+                </div>
+                <button type="submit" class="join-button">Let's Run!</button>
+            </form>
+        </section>
+
     </main>
 
     <!-- Footer element -->
@@ -64,7 +93,7 @@
     </footer>
 
     <!-- Font Awesome kit -->
-    <!-- Putting the js file here makes sure that the browser focusses on loading the visible elements of the page first before adding in the js files -->  
+    <!-- Putting the js file here makes sure that the browser focusses on loading the visible elements of the page first before adding in the js files -->
     <script src="https://kit.fontawesome.com/5a74a18106.js" crossorigin="anonymous"></script>
 </body>
 
