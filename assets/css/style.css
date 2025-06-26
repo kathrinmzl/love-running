@@ -92,6 +92,9 @@ main {
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
   margin-top: 47px; /*because headers position has been set to fixed it's hiding a part of the main, so it has to be pushed down*/
+  /*Enable flex properties for child elements*/
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero section */
@@ -200,6 +203,52 @@ hero section without distorting.*/
     line-height: 0;
 }
 
+/* Signup page */
+#signup {
+    background: url("../images/signup-image.webp") 75%/cover;
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
+}
+
+#signup-form {
+    color:#ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+/* Override the heading colour set in general styles */
+#signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    color: #fafafa;
+    background: transparent;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    margin-top: 20px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color:#fafafa;
+    font-size: 100%;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -289,6 +338,28 @@ hero section without distorting.*/
     /*Gallery*/
     #photos {
         column-count: 3;  
+    }
+
+    /* Signup page */
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
+    #signup {
+        position: relative;
+        background-position: center;
+    }
+
+    #signup-form {
+        position: absolute;
+        left: 10%;
+        top: 150px;
+        max-width: 400px;
     }
 }
 
